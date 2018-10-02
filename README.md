@@ -21,19 +21,24 @@ The recommended way to install composer packages is:
 ```
 composer require your-name-here/PushManager
 ```
-###1.2 Manual Way 
+1.2. Manual Way 
 - Download or clone this project. 
 - Copy and Paste the entire folder to plugins folder. 
 
-###2. Loading This Plugin
+2. Loading This Plugin
 - The easiest way to load this plugin is use this bake command: 
-> cake plugin load PushManager
+```
 
+cake plugin load PushManager
+```
 - Go to your config/bootstrap.php and paste this code:
-> Plugin::load('PushManager', ['bootstrap' => false, 'routes' => true]);
+```
+Plugin::load('PushManager', ['bootstrap' => false, 'routes' => true]);
+```
+3. Test it out!
+- Go to this url: 
+```
 
-###3. Test it out!
-- Go to this url: yourhostname/push-manager/push 
-- This will show a page with forms in it.
-
+yourhostname/push-manager/push 
+```
 # PushNotifManagerCake3.x
