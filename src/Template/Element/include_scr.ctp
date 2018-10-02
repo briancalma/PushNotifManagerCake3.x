@@ -33,6 +33,7 @@
                 })
                 .then(function(token){
                     console.log(token);
+                    // You can put your ajax call here to save the token in the database
                 })
                 .catch(function(err) {
                     console.log('Error Occured!', err);
