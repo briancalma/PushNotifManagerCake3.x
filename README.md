@@ -13,32 +13,27 @@ These instructions will get you a copy of the project up and running on your loc
 
 
 ## Installation
-###1.1 Using Composer
-You can install this plugin into your CakePHP application using [composer](http://getcomposer.org).
-
-The recommended way to install composer packages is:
-
-```
-composer require your-name-here/PushManager
-```
-1.2. Manual Way 
+1. Manual Way 
 - Download or clone this project. 
 - Copy and Paste the entire folder to plugins folder. 
 
 2. Loading This Plugin
 - The easiest way to load this plugin is use this bake command: 
 ```
+composer dumpautoload
 
 cake plugin load PushManager
 ```
+
 - Go to your config/bootstrap.php and paste this code:
 ```
+
 Plugin::load('PushManager', ['bootstrap' => false, 'routes' => true]);
+
 ```
 3. Test it out!
 - Go to this url: 
 ```
-
 yourhostname/push-manager/push 
 ```
 # PushNotifManagerCake3.x
