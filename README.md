@@ -47,7 +47,7 @@ yourhostname/push-manager/push
 2. Firebase Config TextArea Field 
    - Fb Config textarea will hold the Firebase Web SDK. Navigate to the console and copy paste your sdk setup: 
 
-##Example
+## Example
    ```
     apiKey: "YOUR-API-KEY",
     authDomain: "AUTH-DOMAIN",
@@ -84,7 +84,7 @@ yourhostname/push-manager/push
 
 2. Go to your desired page/template you want to show the Allow Push Notification Popup and paste this code. 
     ```
-    <?php $this->element('PushManager.include_scr');?>
+    <?php echo $this->element('PushManager.include_scr');?>
     ```
     
     - You can then configure PushManager/src/Template/Element/include_scr.ctp if you want to make some tweaks like sending the generated token in your database.
